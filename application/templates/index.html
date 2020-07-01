@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron jumbotron-header">
+      <div class="container">
+        <h1 class="display-4">Welcome to Hissham Tech Academy</h1>
+
+        <div class="card card-jumbotron1" style="width: 25rem;">
+          <div class="card-body">
+            <h3 class="card-title">Learn-by-Doing Training Features.</h3>
+            <p class="card-text">
+              Our learn-by-doing training platform is equipped with everything
+              you need to code along, stay engaged, and achieve your goals.
+            </p>
+          </div>
+        </div>
+
+        <br />
+        <div class="container">
+          
+          <h2>Get in the driver's seat and learn new tech skills.</h2>
+          {% if login %}
+          <a class="btn btn-primary btn-lg" href="about.html" role="button"
+            >Learn more</a
+          >
+          {% else %}
+          <div>
+            <p><h3> Already Registered?</h3> <a href="login.html">Login</a></p>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <div class="container company">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4 id="com-text">SOME OF OUR STUDENT WORK HERE.</h4>
+          <img src="{{ url_for('static', filename='images/companieslogo.PNG')}}" />
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-middle">
+      <div class="container">
+        <h3 class="display-6 text-center">
+          Great Careers With Great Salaries
+        </h3>
+
+        <div id="first-data" class="card card-salary">
+          <div class="card-body">
+            <h3 class="card-title">Learn-by-Doing Training Features.</h3>
+            <p class="card-text">
+              Our learn-by-doing training platform is equipped with everything
+              you need to code along, stay engaged, and achieve your goals.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div id="second-data" class="card card-salary">
+          <div class="card-body">
+            <h3 class="card-title">Learn-by-Doing Training Features.</h3>
+            <p class="card-text">
+              Our learn-by-doing training platform is equipped with everything
+              you need to code along, stay engaged, and achieve your goals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+{% endblock %} 
+
+   
